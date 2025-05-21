@@ -8,9 +8,10 @@ B<MySudoku> - Creates a class from a hash
 =head1 SYNOPSIS
 
 =begin code :lang<raku>
-
 use MySudoku;
-
+my %hash = ...; # 9x9
+my $s = MySudoku.new: %hash;
+say $o.string; # OUTPUT: <<string repr of 81 numbers in a 9x9 grid>>
 =end code
 
 =head1 DESCRIPTION

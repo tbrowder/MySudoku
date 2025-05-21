@@ -1,3 +1,5 @@
+[![Actions Status](https://github.com/tbrowder/MySudoku/actions/workflows/linux.yml/badge.svg)](https://github.com/tbrowder/MySudoku/actions) [![Actions Status](https://github.com/tbrowder/MySudoku/actions/workflows/macos.yml/badge.svg)](https://github.com/tbrowder/MySudoku/actions) [![Actions Status](https://github.com/tbrowder/MySudoku/actions/workflows/windows.yml/badge.svg)](https://github.com/tbrowder/MySudoku/actions)
+
 NAME
 ====
 
@@ -8,6 +10,9 @@ SYNOPSIS
 
 ```raku
 use MySudoku;
+my %hash = ...; # 9x9
+my $s = MySudoku.new: %hash;
+say $o.string; # OUTPUT: <<string repr of 81 numbers in a 9x9 grid>>
 ```
 
 DESCRIPTION
