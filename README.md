@@ -12,13 +12,14 @@ SYNOPSIS
 use MySudoku;
 my @arr = ...; # 9x9 array of numbers, zeroes = hidden values 
 my $s = MySudoku.new: @arr;
-say $o.string; # OUTPUT: <<string repr of 81 numbers in a 9x9 grid>>
+say $o.string;         # OUTPUT: <<string repr of 81 numbers in a 9x9 grid>>
+say $o.string.comb[0]; # OUTPUT: <<1>>
 ```
 
 DESCRIPTION
 ===========
 
-**MySudoku** is ...
+**MySudoku** is demo for [Coke]
 
 AUTHOR
 ======

@@ -29,4 +29,15 @@ my @arr81 = [
 is @arr9.elems, 9;
 is @arr81.elems, 81;
 
+my $o;
+$o = MySudoku.new: @arr9;
+isa-ok $o, MySudoku;
+
+$o = MySudoku.new: @arr81;
+isa-ok $o, MySudoku;
+
+# investigate pieces
+is $o.string.comb[0], 1;
+is $o.string.comb[80], 9;
+
 done-testing;
