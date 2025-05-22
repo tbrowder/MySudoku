@@ -3,15 +3,15 @@
 NAME
 ====
 
-**MySudoku** - Creates a class from a hash
+**MySudoku** - Creates a class from an array
 
 SYNOPSIS
 ========
 
 ```raku
 use MySudoku;
-my %hash = ...; # 9x9
-my $s = MySudoku.new: %hash;
+my @arr = ...; # 9x9 array of numbers, zeroes = hidden values 
+my $s = MySudoku.new: @arr;
 say $o.string; # OUTPUT: <<string repr of 81 numbers in a 9x9 grid>>
 ```
 
