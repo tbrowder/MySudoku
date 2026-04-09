@@ -8,15 +8,23 @@ B<MySudoku> - Creates a Sudoku solver for a given game
 
 =begin code :lang<raku>
 use MySudoku;
-my @arr = ...; # 9x9 array of numbers, zeroes = hidden values 
-my $s = MySudoku.new: @arr, :$level; # levels: flash (default), defa;
+my @arr = ...; # 9x9 array of numbers, zeroes = missing values
+my $s = MySudoku.new: @arr;
 say $o.string;         # OUTPUT: <<string repr of 81 numbers in a 9x9 grid>>
-say $o.string.comb[0]; # OUTPUT: <<1>>
 =end code
 
 =head1 DESCRIPTION
 
-B<MySudoku> is demo for [Coke]
+B<MySudoku> is an aid for solving Sudoku puzzles produced by one of
+the games on an iPad or Iphone. It should work with any initial
+Sudoku puzzle layout.
+
+=head1 Example play
+
+=head2 Initial layout
+
+Following is the initial layout from an 'Expert' Sudoku puzzle:
+
 
 =head1 AUTHOR
 
