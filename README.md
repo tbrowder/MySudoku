@@ -3,7 +3,7 @@
 NAME
 ====
 
-**MySudoku** - Creates a class from an array
+**MySudoku** - Creates a Sudoku solver for a given game 
 
 SYNOPSIS
 ========
@@ -11,7 +11,7 @@ SYNOPSIS
 ```raku
 use MySudoku;
 my @arr = ...; # 9x9 array of numbers, zeroes = hidden values 
-my $s = MySudoku.new: @arr;
+my $s = MySudoku.new: @arr, :$level; # levels: flash (default), defa;
 say $o.string;         # OUTPUT: <<string repr of 81 numbers in a 9x9 grid>>
 say $o.string.comb[0]; # OUTPUT: <<1>>
 ```
